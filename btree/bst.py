@@ -108,7 +108,7 @@ class BinaryTree(object):
             if not (current.left or current.right):
                 return best
 
-    def find_nearest_old(self, k):
+    def _get_nearest_old(self, k):
         """Yu, This was the first, incorrect interview attempt"""
         best_distance = abs(current_node.value - k)
         current_node = tree.root

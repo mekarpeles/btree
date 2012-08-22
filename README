@@ -28,7 +28,7 @@ tests:
 ~~~~~~
 To run test cases, from this diretory, cd into project directory
 (btree) and type "nosetests" from the command line. Requires python
-library 'nose'. To install nose with pip, type:
+library 'nose'. To install nose with pip, type: 
 $ sudo pip install nose
 
 # nosetests example:

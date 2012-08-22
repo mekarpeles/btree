@@ -13,7 +13,6 @@ class BinarySearch_Test(unittest.TestCase):
         self.assertTrue(left.value, "No node left of root.")
         self.assertTrue(left.value == 3,
                         "Node left of root has value %s, expected 3" % left.value)
-        pass
 
     def test_insert_right(self):
         btree = bst.BinaryTree()

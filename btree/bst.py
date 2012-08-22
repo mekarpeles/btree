@@ -22,27 +22,27 @@ class BinaryTree(object):
         [self.insert(v) for v in values]
 
     def insert(self, value, node=None):
-        """Insert a Node iteratively within the BinaryTree"""
+        """Insert a Node recursively within the BinaryTree"""
         if not getattr(self, 'root', None):
             self.root = Node(value)
-            return
+            return self
 
         current = node if node else self.root
         
         if current.value == value:
-            return
+            return self
         
         if value < current.value:
             if not current.left:
                 current.left = Node(value)
-                return 
+                return self
             else:
                 return self.insert(value, current.left)
 
         if value > current.value:
             if not current.right:
                 current.right = Node(value)
-                return 
+                return self
             else:
                 return self.insert(value, current.right)
     

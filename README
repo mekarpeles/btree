@@ -1,0 +1,40 @@
+Binary Tree Utility
+===================
+
+Simple binary tree utility to construct basic Binary Trees + perform
+searches for nodes having a value closest to user defined values
+
+Directions: 
+~~~~~~~~~~~
+python bs.py -h for help.
+
+Flags:
+~~~~~~
+usage: bs.py [-h] [-i ITEMS] [-k NEAREST]
+
+Builds a Binary Search Tree (BST) and finds the node containing the closest
+value to some value k
+
+optional arguments:
+  -h, --help            show this help message and exit
+  -i ITEMS, --items ITEMS
+                        An ordered csv of int items to insert into the binary
+                        tree, e.g: -i 10,11,6,9,8,7
+  -k NEAREST, --nearest NEAREST
+                        Find the node containing the abs(value) closest to
+                        that if value k
+
+tests:
+~~~~~~
+To run test cases, from this diretory, cd into project directory
+(btree) and type "nosetests" from the command line. Requires python
+library 'nose'. To install nose with pip, type:
+$ sudo pip install nose
+
+# nosetests example:
+$ nosetests
+...
+----------------------------------------------------------------------
+Ran 3 tests in 0.018s
+
+OK
